@@ -1,0 +1,17 @@
+#main-title {
+    text-align: center;
+}
+
+#main-table {
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    border : 1px solid black;
+    background-color: aliceblue;
+}
+
+.holiday {
+    color: red;
+    cursor: pointer;
+}
