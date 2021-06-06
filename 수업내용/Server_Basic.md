@@ -21,7 +21,7 @@ ___
 |80|웹브라우저가 서버에 접속하기 위한 암묵적인 포트 번호 (http)|
 |443|secure HTTP인 https 전용 포트|
 
-##3. Naver Cloud + Django Setting
+## 3. Naver Cloud + Django Setting
 - ```ACG``` : 서버 그룹에 대한 네트워크 접근을 제어, 관리할 수 있는 서비스. IP주소와 포트 단위로 접근을 제어 할 수 있다.
 - ```apt``` : 우분투에서 쓰이는 패키지 관리 프로그램
     + apt update : 사용 가능한 패키지들을 업데이트
