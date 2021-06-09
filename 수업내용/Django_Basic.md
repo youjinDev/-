@@ -110,12 +110,16 @@ $ root@firstserver:~/newproject/vip_user/migrations# ls
 
 #### 📍 Django admin 사용하기
 
-`$ python3 manage.py createsuperuser`
+`$ python3 manage.py createsuperuser` 로 admin id, pw 생성
 
-- 장고는 디비 관리자 기능을 기본으로 제공함
+- 장고는 DB 관리자 기능을 기본으로 제공함
 
+<<<<<<< Updated upstream
 - 웹에서 `[공인ip]:8000/admin` 으로 접속 후 해당 명령어로 생성한 id와 pw 입력
 ___
 
 
 🤔🤔🤔 더 자세히 알고싶다 : [Django App tutorial](https://docs.djangoproject.com/ko/3.2/intro/tutorial02/)
+=======
+- 웹에서 `[공인ip]:8000/admin` 으로 접속 후 생성한 id와 pw 입력 후 확인해보기!
+>>>>>>> Stashed changes
