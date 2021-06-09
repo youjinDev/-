@@ -12,10 +12,10 @@
   - `:wq!` : 저장 후 나가기
   - `:q!` : 저장하지 않고 나가기
 - `cat [파일명]` : 파일 내용 출력
-- `rm [filemane]` : 파일 제거
-- `mv [filename]` : 파일 이동
+- `rm [fileName]` : 파일 제거
+- `mv [fileName]` : 파일 이동
 - `mkdir` : 디렉토리 생성
-- `nohub [프로세스명]` : no hanhups, 세션이 끝나도 특정 프로세스가 계속 실행되도록 한다.
+- `nohub [프로세스명]` : 세션이 끝나도 특정 프로세스가 계속 실행되도록 한다.
 
   - `nohub [프로세스명] &` : 백그라운드로 실행
 
@@ -100,7 +100,7 @@ $ root@firstserver:~/newproject/vip_user/migrations# ls
 0001_initial.py  __init__.py  __pycache__
 ```
 
-`__init__.py` 파일 생성된 것 확인하기! `__init__.py` 파일은 해당 디렉터리가 패키지의 일부임을 알려주는 역할
+`0001_initial.py` 파일 생성된 것 확인하기!
 
 #### 📍 migrate (=server push)
 
