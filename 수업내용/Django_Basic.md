@@ -30,12 +30,12 @@
 
 ### 1-2. Django 기본
 
-📍 장고는 **Project**와 **App**으로 구성되어있음
+#### 📍 장고는 **Project**와 **App**으로 구성되어있음
 
 - App : 하나의 독립적인 기능 (회원 앱, 상품 앱, 결제 앱 등등) 이며 다른 프로젝트에서 재사용이 가능
 - Project : 복수의 앱들의 모임. manage.py가 위치한 곳
 
-📍 장고 서버 켜기
+#### 📍 장고 서버 켜기
 
 ```
 $ cd [projectName] //manage.py가 있는 프로젝트인지 경로 잘 보기!
@@ -44,7 +44,7 @@ $ python3 manage.py runserver 0.0.0.0:8000
 
 후에 브라우저에서 **[공인ip]:8000** 접속
 
-📍 앱 생성하기
+#### 📍 앱 생성하기
 
 ```
 $ django-admin startapp [appName]
@@ -54,9 +54,9 @@ $ django-admin startapp [appName]
 프로젝트의 하위에 프로젝트명과 동일한 이름의 앱이 있음. `settings.py` >
 **_INSTALLED_APPS_** 항목 살펴보기
 
-📍 해당 **AppName/models.py**에서는 생성한 데이터베이스에 대한 것이 기술되어야 함. vi 편집기로 열어서 다음과 같이 입력.
+#### 📍 해당 **AppName/models.py**에서는 생성한 데이터베이스에 대한 model이 기술되어야 함. vi 편집기로 열어서 다음과 같이 입력.
 
-```
+```python
 from django.db import models
 
 # Create your models here.
@@ -75,8 +75,9 @@ class VipUser(models.Model):
   - **verbose_name** : 보는 사람을 위한 주석과 같은 것
   - **choices=GENDERS** : 정해진 값만 선택할 수 있게 제한 걸기
   - **auto_now_add** : 자동으로 기록할 것인지 선택 할 수 있음
+- 이후 위에서 언급한 `settings.py` > **_INSTALLED_APPS_** 항목에 appName을 추가해주기
 
-📍 **makemigrations** (=local commit)
+#### 📍 makemigrations (=local commit, 모델을 변경했다는 사실을 장고에게 알려주는 것)
 
 `$ python3 manage.py makemigrations [appName]`
 
@@ -99,18 +100,22 @@ $ root@firstserver:~/newproject/vip_user/migrations# ls
 0001_initial.py  __init__.py  __pycache__
 ```
 
-`__init__.py` 파일 생성된 것 확인하기
+`__init__.py` 파일 생성된 것 확인하기! `__init__.py` 파일은 해당 디렉터리가 패키지의 일부임을 알려주는 역할
 
-📍 migrate (=server push)
+#### 📍 migrate (=server push)
 
 `$ python3 manage.py migrate`
 
 이 명령어 이후로 실서버에 반영, DB에 올라간 상태
 
-📍 Django admin 사용하기
+#### 📍 Django admin 사용하기
 
 `$ python3 manage.py createsuperuser`
 
 - 장고는 디비 관리자 기능을 기본으로 제공함
 
 - 웹에서 `[공인ip]:8000/admin` 으로 접속 후 해당 명령어로 생성한 id와 pw 입력
+___
+
+
+🤔🤔🤔 더 자세히 알고싶다 : [Django App tutorial](https://docs.djangoproject.com/ko/3.2/intro/tutorial02/)
