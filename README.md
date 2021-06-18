@@ -19,3 +19,4 @@
   + [Django 기초](./수업내용/Django_Basic.md)
 ### 3) etc
   + [개발패턴, 블록체인, git 기초](./수업내용/pattern_blockChain_git.md)
+  + [SPA, CSR, SSR](./수업내용/SPA.md)
