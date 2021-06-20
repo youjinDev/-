@@ -8,6 +8,7 @@
 - 6/4 금 : [Server 기초](./수업내용/Server_Basic.md)
 - 6/7 월 : [개발패턴, 블록체인, git 기초](./수업내용/pattern_blockChain_git.md)
 - 6/9 수 : [Django 기초](./수업내용/Django_Basic.md)
+- 6/16 수 : [HTTP, HTTPS](./수업내용/HTTP.md)
 - 6/18 금 : [SPA, CSR, SSR](./수업내용/SPA.md)
 
 
