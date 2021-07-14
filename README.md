@@ -22,7 +22,7 @@
 - [Python](https://github.com/youjinDev/Python)
 
 ## 👩‍👩‍👧‍👧 3. 팀프로젝트
-- [ReBook](https://github.com/CodingOnTeamBook/Rebook_React_Node)
+- [ReBook📚](https://github.com/CodingOnTeamBook/Rebook_React_Node)
 
 ## 👀 4. 모아 보기
 ### 1) Client
